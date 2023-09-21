@@ -1,0 +1,2175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+html{
+	scroll-behavior: smooth;
+}
+*{
+  /* border: 1px solid; */
+  
+    margin:0;
+	padding: 0;
+}
+body{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.navbar{
+  align-items: center;
+  height: 100px;
+}
+.navbar .navbar-brand img{
+  width: 120px;
+  height: 52px;   
+}
+ .navbar-brand2 .sm-logo{
+  padding-right: 23px;
+  width: 140px;
+  height: 62px;   
+}
+.marginright{
+  margin-right: 65px;
+}
+.sm-icons {
+    flex-direction: row;
+  }
+  .sm-icons .nav-link {
+    padding-right: 1em;
+  }
+  .navbar-toggler{
+      border: none;
+      border-radius: 1px;
+  }
+  .navbar-toggler:focus{
+      box-shadow: none;
+  }
+  .navbar-nav .icon{
+    color: white;
+    background-color:#296071;
+    border-radius: 15%;
+    padding: 5px;
+    font-size: 16px;
+  }
+ 
+  .navbar-nav .icon:hover{
+    color: #296071;
+    background-color:white;
+  }
+ 
+  .myicon{
+    color:#296071;
+  }
+  .navbar-nav .headerlink{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+    color: #296071;
+
+  }
+  /* .navbar-nav .headerlink:not(.active):hover{
+    color:#51c4e4;
+    text-decoration: underline;
+    
+  } */
+  .navbar-nav .headerlink:hover{
+    color:#51c4e4;
+    text-decoration: underline;
+    
+  }
+  /* .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: none;
+  }
+  */
+  .text{
+    font-size: 34px;
+    font-weight: 700;
+    font-style: normal;
+    color: #4798A6;
+    text-align: center;
+    line-height: 25px;
+    padding-top: 50px;
+  }
+  .big{
+    font-size: 46px;
+    color: #296071;
+    font-weight: 600;
+    text-align: center;
+  }
+  .button{
+    border: 1px solid #000000;
+    border-radius: 2px;
+    padding: 15px 45px;
+    letter-spacing: 1.25%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.77px;
+    background: none;
+
+  }
+  .button:hover{
+    border: 1px solid #FFFFFF;
+    background-color: #296071;
+    color: white;
+  }
+
+  .dropdown-toggle::after {
+    transform: rotate(270deg);
+  }
+  .dropdown-item{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 30px !important;
+  }
+  .dropdown-menu{
+    background-color: #DDF2F5;
+  }
+  .dropdown-item:focus, .dropdown-item:hover {
+    background-color: #DDF2F5 !important;
+  }
+  .backUl{
+    background-color: #DDF2F5;
+    width: 350px;
+  }
+
+  
+
+ /* ########## burger checkbox ################# */
+  .burger {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+   
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    background-color: #296071;
+  }
+ 
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 18px;
+    left: 5px;
+  }
+  .dropdown-menu.show {
+    position: relative !important;
+    inset:unset !important;
+    transform:none !important;
+    margin: 0px !important;
+    overflow: hidden !important;
+ }
+
+  /* ########## End burger checkbox ################# */
+
+ 
+/* ########## Responsive width 320px ############# */
+
+  @media (max-width: 320.98px) { 
+    .burger{
+      margin-right:8px;
+    }
+    .backUl{
+      /* padding: 20px !important; */
+      width: 100% !important;
+    }
+    .box{
+      margin:0px !important;
+      padding: 0px !important;
+    }
+    .navbar-nav .headerlink{
+      line-height: 40px !important;
+    }
+    .navbar-brand{
+      padding-left:5px;
+    }
+    .navbar-brand2 .sm-logo{
+      padding-right: 30px;
+      width: 150px;
+      height: 62px;   
+    }
+    .text{
+      font-size: 13px !important;
+      line-height: 6px !important;
+      padding-top: 10px !important;
+    }  
+    .big{
+      font-size: 16px !important; 
+      line-height: 20px  !important;
+    }
+    .button{
+      border: 1px solid #FFFFFF;
+      border-radius: 2px;
+      padding:10px 20px !important;
+      letter-spacing: 1.25%;
+      font-size: 14px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color: #296071;
+    color: white;
+    }
+    .button:hover{
+      border: 1px solid #000000;
+      background-color:white;
+      color: black;
+    }
+    .imagehero{
+      margin-top: 30px !important;
+    }
+    #section2{
+      background:none !important;
+      background-color: white;
+    }
+    .welcome{
+      padding-top: 61px !important;
+     }
+     .welcometext{
+      font-size: 15px;
+      font-weight: 400;
+      text-align: justify;
+      line-height: 26px;
+     }
+     .welcometext br{
+      display: none;
+     }
+     .row .image1{
+      padding: 0;
+    }
+    .text-overlay .innertext{
+      font-size: 18px !important;
+      padding-top: 24px !important;
+    }
+    .text-overlay{
+      display: none !important;
+        } 
+        .texthover { 
+          opacity: 1 !important;
+    }
+    
+    .image-container{
+      margin-bottom: 20px !important;
+    }
+   
+    .text-overlay2 p{
+      font-size: 18px !important;
+      padding-top: 20px !important;
+    }
+    .text-overlay2 {
+      position: absolute;
+      top:70% !important;
+      text-align: center;
+      width: 100%;
+  
+    }
+    .text-overlay2 p{
+  
+     font-weight: 700;
+     color: #FFFFFF;
+     height: 10px;
+     background-color: rgba(41, 96, 113, 0.75) !important;
+      padding: 20px;
+      align-items: center;
+      height: 70px !important; 
+    }
+    #btnview{
+      border: 1px solid #000000;
+      border-radius: 2px;
+      padding:10px 25px !important;
+      letter-spacing: 1.25%;
+      font-size: 12px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color:white;
+      color: black;
+    }
+    #btnview:hover{
+      border: 1px solid #000000;
+     
+      background-color: #296071;
+      color: white;
+    }
+    .section3{
+      margin-top: 100px !important;
+    }
+    .textonpic{
+     padding: 0px !important;
+    }
+    #section3{
+     display: none;
+    }
+    .bigtext{
+      display: none !important;
+    }
+    .floridaimage{
+      display: block !important;
+      
+    }
+   
+    .section4{
+      margin-top: 130px !important;
+    }
+    .section4border{
+      border: none !important;
+    }
+    .forborder{
+      padding:10px;
+    }
+    .doctorpic{
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: none !important;
+    margin-left:0px !important;
+   }
+   .doctorpara{
+    font-size: 15px !important;
+    font-weight: 400 !important;
+   }
+   .textbox{
+     padding-top: 10px !important;
+   }
+   .textbox .head3, .head5{
+     display: none;
+   }
+   .textbox br{
+    display: none;
+   }
+   .buttonasghar{
+    border:1px solid #FFFFFF !important;
+    padding:10px 25px !important;
+    
+   }
+   .buttonasghar:hover{
+    border:1px solid #000000 !important;
+   }
+   .asgharbutton{
+    text-align: center;
+   }
+   .ourofficeimage{
+    display: none;
+   }
+   .ourofficetext p{
+    text-align: justify !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    padding: 10px;
+    margin-top:-30px !important;
+   }
+   .ourofficetext br{
+    display: none;
+    
+   }
+   .office{
+    font-size: 14px !important;
+    margin-top: 30px !important;
+    padding:10px 25px !important;
+   }
+   .surgery{
+    display: none ;
+   }
+   .right {
+    padding: 10px;
+   }
+  .textbox2 .breakline{
+    font-size: 15px !important;
+    line-height: 26px;
+    text-align: justify !important;
+    font-weight: 400 !important;
+  }
+  .textbox2 .breakline br{
+    display: none ;
+  }
+ 
+  .textbox2 .middle{
+    color: #296071;
+    font-size: 15px !important;
+  }
+  .textbox2 ul{
+    margin: 0;
+    padding-left:20px;
+    padding-bottom:40px;
+  }
+  .textbox2 ul li {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-align: justify;
+  }
+  .surgerybtn{
+    text-align: center;
+  }
+  .imagehero{
+    display: none;
+  }
+  .newheroimage{
+    display: block;
+  }
+  .newheroimage{
+    padding-top: 40px;
+  }
+  .imgbottom{
+    margin-top: -45px;
+  }
+  #footer{
+    font-size: 15px !important;
+    background:none !important;
+    background: linear-gradient(180deg, #78b1bd97 0%, rgba(120, 178, 189, 0.2) 100%) !important;
+  height: auto;
+  }
+  /* #footer{
+    background: url(../img/Group\ 125.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: 147px;
+    padding: 50px 0px;
+  } */
+  .footerlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .flogo{
+      text-align: center;
+      align-items: center;
+    }
+    .landeicon{
+      display: none !important;
+    }
+    .button2{
+      font-size: 14px !important;
+      padding:10px 25px !important;
+    }
+    .forpad{
+      padding-left: 29px;
+    }
+   }
+
+   /* ############ End of Responsive of width 320px ########### */
+
+
+  /* ########## Responsiveness for width 375px ###############*/
+
+  @media (min-width: 320.98px) and (max-width: 375.98px) { 
+    .burger{
+      margin-right:10px;
+    }
+    .backUl{
+      /* padding: 20px !important; */
+      width: 100% !important;
+    }
+    .box{
+      margin:0px !important;
+      padding: 0px !important;
+    }
+    .navbar-nav .headerlink{
+      line-height: 40px !important;
+    }
+    .navbar-brand{
+      padding-left:7px;
+    }
+    .text{
+      font-size: 15px !important;
+      line-height: 8px !important;
+      padding-top: 20px !important;
+    }  
+    .big{
+      font-size: 18px !important; 
+      line-height: 20px  !important;
+    }
+    .button{
+      border: 1px solid #FFFFFF;
+      border-radius: 2px;
+      padding:10px 25px !important;
+      letter-spacing: 1.25%;
+      font-size: 15px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color: #296071;
+    color: white;
+    }
+    .button:hover{
+      border: 1px solid #000000;
+      background-color:white;
+      color: black;
+    }
+    .imagehero{
+      margin-top: 30px !important;
+    }
+    #section2{
+      background:none !important;
+      background-color: white;
+    }
+    .welcome{
+      padding-top: 61px !important;
+     }
+     .welcometext{
+      font-size: 15px;
+      font-weight: 400;
+      text-align: justify;
+      line-height: 26px;
+     }
+     .welcometext br{
+      display: none;
+     }
+     .row .image1{
+      padding: 0;
+    }
+    .image-container{
+      margin-bottom: 20px !important;
+    }
+    .text-overlay .innertext{
+      font-size: 18px !important;
+      padding-top: 24px !important;
+    }
+    .text-overlay{
+      display: none !important;
+        } 
+        .texthover { 
+          opacity: 1 !important;
+    }
+    
+    .text-overlay2 p{
+      font-size: 18px !important;
+      padding-top: 20px !important;
+    }
+    .text-overlay2 {
+      position: absolute;
+      top: 72% !important;
+      text-align: center;
+      width: 100%;
+  
+    }
+    .text-overlay2 p{
+  
+     font-weight: 700;
+     color: #FFFFFF;
+     height: 10px;
+     background-color: rgba(41, 96, 113, 0.75) !important;
+      padding: 20px;
+      align-items: center;
+      height: 70px !important; 
+    }
+    #btnview{
+      border: 1px solid #000000;
+      border-radius: 2px;
+      padding:10px 25px !important;
+      letter-spacing: 1.25%;
+      font-size: 13px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color:white;
+      color: black;
+    }
+    #btnview:hover{
+      border: 1px solid #000000;
+     
+      background-color: #296071;
+      color: white;
+    }
+    .section3{
+      margin-top: 100px !important;
+    }
+    .textonpic{
+     padding: 0px !important;
+    }
+    #section3{
+     display: none;
+    }
+    .bigtext{
+      display: none !important;
+    }
+    .floridaimage{
+      display: block !important;
+      
+    }
+   
+    .section4{
+      margin-top: 130px !important;
+    }
+    .section4border{
+      border: none !important;
+    }
+    .forborder{
+      padding:10px;
+    }
+    .doctorpic{
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: none !important;
+    margin-left:0px !important;
+   }
+   .doctorpara{
+    font-size: 15px !important;
+    font-weight: 400 !important;
+   }
+   .textbox{
+     padding-top: 10px !important;
+   }
+   .textbox .head3, .head5{
+     display: none;
+   }
+   .textbox br{
+    display: none;
+   }
+   .buttonasghar{
+    border:1px solid #FFFFFF !important;
+    padding:10px 25px !important;
+    
+   }
+   .buttonasghar:hover{
+    border:1px solid #000000 !important;
+   }
+   .asgharbutton{
+    text-align: center;
+   }
+   .ourofficeimage{
+    display: none;
+   }
+   .ourofficetext p{
+    text-align: justify !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    padding: 10px;
+    margin-top:-30px !important;
+   }
+   .ourofficetext br{
+    display: none;
+    
+   }
+   .office{
+    margin-top: 30px !important;
+    padding:10px 25px !important;
+   }
+   .surgery{
+    display: none ;
+   }
+   .right {
+    padding: 10px;
+   }
+  .textbox2 .breakline{
+    font-size: 15px !important;
+    line-height: 26px;
+    text-align: justify !important;
+    font-weight: 400 !important;
+  }
+  .textbox2 .breakline br{
+    display: none ;
+  }
+ 
+  .textbox2 .middle{
+    color: #296071;
+    font-size: 15px !important;
+  }
+  .textbox2 ul{
+    margin: 0;
+    padding-left:20px;
+    padding-bottom:40px;
+  }
+  .textbox2 ul li {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-align: justify;
+  }
+  .surgerybtn{
+    text-align: center;
+  }
+  .imagehero{
+    display: none;
+  }
+  .newheroimage{
+    display: block;
+  }
+  .newheroimage{
+    padding-top: 40px;
+  }
+  .imgbottom{
+    margin-top: -45px;
+  }
+  .footerlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .flogo{
+      text-align: center;
+    
+    }
+  .landeicon{
+    display: none !important;
+  }
+  .button2{
+    font-size: 15px !important;
+    padding:10px 25px !important;
+  }
+  .forpad{
+    padding-left: 31px !important;
+  }
+  #footer{
+    background:none !important;
+    background: linear-gradient(180deg, #78b1bd97 0%, rgba(120, 178, 189, 0.2) 100%) !important;
+  }
+   }
+
+  /* ################ End of Responsive width 375px ################*/
+
+  /* ########## Responsiveness for width 425px ###############*/
+  
+  @media (min-width: 375.98px) and (max-width: 425.98px) { 
+    .burger{
+      margin-right:12px;
+    }
+    .backUl{
+      /* padding: 20px !important; */
+      width: 100% !important;
+    }
+    .box{
+      margin:0px !important;
+      padding: 0px !important;
+    }
+    .navbar-nav .headerlink{
+      line-height: 40px !important;
+    }
+    .navbar-brand{
+      padding-left:9px;
+    }
+    .text{
+      font-size: 16px !important;
+      line-height: 10px !important;
+      padding-top: 20px !important;
+    }  
+    .big{
+      font-size: 20px !important; 
+      line-height: 20px  !important;
+    }
+    .button{
+      border: 1px solid #FFFFFF;
+      border-radius: 2px;
+      padding:10px 25px !important;
+      letter-spacing: 1.25%;
+      font-size: 15px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color: #296071;
+    color: white;
+    }
+    .button:hover{
+      border: 1px solid #000000;
+      background-color:white;
+      color: black;
+    }
+    .imagehero{
+      margin-top: 30px !important;
+    }
+    #section2{
+      background:none !important;
+      background-color: white;
+    }
+    .welcome{
+      padding-top: 61px !important;
+     }
+     .welcometext{
+      font-size: 15px;
+      font-weight: 400;
+      text-align: justify;
+      line-height: 26px;
+     }
+     .welcometext br{
+      display: none;
+     }
+     .row .image1{
+      padding: 0;
+    }
+    .image-container{
+      margin-bottom: 20px !important;
+    }
+
+    .text-overlay{
+     display: none !important;
+       } 
+       .texthover { 
+         opacity: 1 !important;
+   }
+
+     .text-overlay .innertext{
+      font-size: 18px !important;
+      padding-top: 24px !important;
+    }
+    .text-overlay2 p{
+      font-size: 18px !important;
+      padding-top: 20px !important;
+    }
+    .text-overlay2 {
+      position: absolute;
+      top: 74% !important;
+      text-align: center;
+      width: 100%;
+  
+    }
+    .text-overlay2 p{
+  
+     font-weight: 700;
+     color: #FFFFFF;
+     height: 10px;
+     background-color: rgba(41, 96, 113, 0.75) !important;
+      padding: 20px;
+      align-items: center;
+      height: 70px !important; 
+    }
+    #btnview{
+      border: 1px solid #000000;
+      border-radius: 2px;
+      padding:10px 25px !important;
+      letter-spacing: 1.25%;
+      font-size: 12px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color:white;
+      color: black;
+    }
+    #btnview:hover{
+      border: 1px solid #000000;
+     
+      background-color: #296071;
+      color: white;
+    }
+    .section3{
+      margin-top: 100px !important;
+    }
+    .textonpic{
+     padding: 0px !important;
+    }
+    #section3{
+     display: none;
+    }
+    .bigtext{
+      display: none !important;
+    }
+    .floridaimage{
+      display: block !important;
+      
+    }
+   
+    .section4{
+      margin-top: 130px !important;
+    }
+    .section4border{
+      border: none !important;
+    }
+    .forborder{
+      padding:10px;
+    }
+    .doctorpic{
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: none !important;
+    margin-left:0px !important;
+   }
+   .doctorpara{
+    font-size: 15px !important;
+    font-weight: 400 !important;
+   }
+   .textbox{
+     padding-top: 10px !important;
+   }
+   .textbox .head3, .head5{
+     display: none;
+   }
+   .textbox br{
+    display: none;
+   }
+  .buttonasghar{
+    border:1px solid #FFFFFF !important;
+    padding:10px 25px !important;
+    
+   }
+   .buttonasghar:hover{
+    border:1px solid #000000 !important;
+   }
+   .asgharbutton{
+    text-align: center;
+   }
+   .ourofficeimage{
+    display: none;
+   }
+   .ourofficetext p{
+    text-align: justify !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    padding: 10px;
+    margin-top:-30px !important;
+   }
+   .ourofficetext br{
+    display: none;
+    
+   }
+   .office{
+    margin-top: 30px !important;
+    padding:10px 25px !important;
+   }
+   .surgery{
+    display: none ;
+   }
+   .textbox2 {
+    padding: 10px;
+   }
+  .textbox2 .breakline{
+    font-size: 15px !important;
+    line-height: 26px;
+    font-weight: 400 !important;
+    text-align: justify;
+  }
+  .textbox2 .breakline br{
+    display: none ;
+  }
+ 
+  .textbox2 .middle{
+    color: #296071;
+    font-size: 15px !important;
+  }
+  .textbox2 ul{
+    margin: 0;
+    padding-left:20px;
+    padding-bottom:40px;
+  }
+  .textbox2 ul li {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-align: justify;
+  }
+  .surgerybtn{
+    text-align: center;
+  }
+  .imagehero{
+    display: none;
+  }
+  .newheroimage{
+    display: block;
+  }
+  .newheroimage{
+    padding-top: 40px;
+  }
+  .imgbottom{
+    margin-top: -55px !important;
+  }
+  .footerlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .flogo{
+      text-align: center;
+    
+    }
+  .landeicon{
+    display: none !important;
+  }
+  .button2{
+    padding:10px 25px !important;
+  }
+  #footer{
+    background:none !important;
+    background: linear-gradient(180deg, #78b1bd97 0%, rgba(120, 178, 189, 0.2) 100%) !important;
+  }
+   }
+
+  /* ################ End of Responsive width 425px ################*/
+
+  /* ########## Responsiveness for width 768px ###############*/
+  
+  @media (min-width: 425.98px) and (max-width: 768.98px) { 
+    .marginright{
+      margin-right: 35px !important;
+    }
+    .text{
+      font-size: 24px !important;
+      line-height: 20px !important;
+    padding-top: 30px !important;
+    }  
+    .big{
+      font-size: 30px !important; 
+      line-height: 30px;
+    }
+    .button{
+      border: 1px solid #FFFFFF;
+      border-radius: 2px;
+      padding:10px 25px !important;
+      letter-spacing: 1.25%;
+      font-size: 15px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color: #296071;
+    color: white;
+    }
+    .button:hover{
+      border: 1px solid #000000;
+      background-color:white;
+      color: black;
+    }
+    .imagehero{
+      margin-top: 30px !important;
+    }
+    .newheroimage{
+      display: none;
+    }
+    .imgbottom{
+      display: none;
+    }
+    .welcome{
+      padding-top: 80px !important;
+     }
+     .welcometext{
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 26px;
+     }
+     .welcometext br{
+      display: none;
+     }
+     .row .image1{
+      padding:10px;
+    }
+    
+    .texthover{
+      line-height: 16px !important;
+    }
+    .text-overlay .innertext{
+      font-size: 16px !important;
+      padding-top: 14px !important;
+      height: 50px !important;
+      padding: 11px !important;
+    }
+    .texthoverp1{
+      font-size: 16px !important;
+    }
+    .hovertext{
+      font-size: 14px !important;
+     
+    }
+    .text-overlay2 p{
+      font-size: 18px !important;
+      padding-top: 20px !important;
+    }
+    .text-overlay2 {
+      position: absolute;
+      top: 63% !important;
+      text-align: center;
+      width: 100%;
+  
+    }
+ 
+    .text-overlay2 p{
+  
+     font-weight: 700;
+     color: #FFFFFF;
+     height: 10px;
+     background: rgba(71, 152, 166, 0.75)  !important;
+      padding: 20px;
+      align-items: center;
+      height: 70px !important; 
+     
+    }
+    #btnview{
+      border: 1px solid #000000;
+      border-radius: 2px;
+      padding:10px 25px !important;
+      letter-spacing: 1.25%;
+      font-size: 12px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color:white;
+      color: black;
+    }
+    #btnview:hover{
+      border: 1px solid #FFFFFF;
+     
+      background-color: #296071;
+      color: white;
+    }
+    .section3{
+      margin-top: 100px !important;
+    }
+    .textonpic{
+     padding: 0px !important;
+    }
+   
+    .floridaimage{
+      display: none !important;
+      
+    }
+    #section3{
+     
+      background-size:cover !important;
+      background-position:center;
+      width: 100%;
+    height: 330px !important;
+      overflow: hidden;
+    }
+    .bigtext{
+      display: block !important;
+      align-items: center !important;
+      flex-direction: column !important;
+      padding-top: 150px !important;
+      text-align: center;
+    }
+   .bigtext p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px !important;
+    line-height: 30px !important;
+    color: #FFFFFF;
+  }
+  .bigtext .headflorida{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px !important;
+    line-height: 160px !important;
+    padding-top: 24px !important;
+    /* identical to box height */
+    color: #FFFFFF;
+
+  }
+    .section4{
+      margin-top: 130px !important;
+   
+    }
+   .textbox br{
+    display: none;
+   }
+  .buttonasghar{
+    border: 1px solid #FFFFFF !important;
+    padding:10px 25px !important;
+   }
+   .buttonasghar:hover{
+    border: 1px solid #000000 !important;
+   }
+ 
+  .section4border{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+  }
+  .doctorpic{
+    margin-left: -12px !important;
+  }
+ 
+  .textbox{
+    padding-top: 28px !important;
+  }
+  .textbox .head3{
+
+    font-size: 18px !important;
+
+  }
+  .textbox .head5{
+   
+    font-size: 20px !important;
+ 
+  }
+  .textbox .doctorpara{
+    font-size: 14px !important  ;
+    text-align: justify;
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
+  }
+  #btnview{
+    font-size: 16px !important;
+    font-weight: 400;
+    
+  }
+
+.textflorida{
+  font-size: 90px !important;
+  margin-top: -85px !important;
+}
+   .ourofficeimage{
+    display: block;
+   }
+   .ourofficetext p{
+    text-align: center !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    margin-top: -40px !important;
+    
+   }
+   .ourofficetext br{
+    display: none;
+   }
+   .office{
+    margin-top: 30px !important;
+    padding:10px 25px !important;
+   }
+   .surgery{
+    background:url(../img/LEAVES.png) no-repeat !important;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 410px !important;
+    
+   }
+  .surgery .textbox2{
+    padding-top: 5% !important;
+  }
+  .textbox2 .breakline2{
+    font-size: 13px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+  }
+  .textbox2 .breakline2 br{
+    display: none !important;
+  }
+ 
+  .textbox2 .middle{
+    color: #296071;
+    font-size: 13px !important;
+  }
+  .textbox2 ul{
+    margin: 0;
+    padding-left:20px;
+    padding-bottom:10px !important;
+  }
+  .textbox2 ul li {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    text-align: justify;
+  }
+ 
+  .surgery .right .textbox2{
+    padding-top: 10% !important;
+  }
+  .textbox2 h3{
+    color: #296071;
+    font-size: 20px !important;
+    font-weight: 700;
+  }
+  
+  .textbox2 .middle{
+    color: #296071;
+    font-weight: 600;
+  }
+  .textbox2 .button2{
+    font-size:14px;
+    padding:10px 25px;
+  }
+  #footer .column{
+    margin-bottom:35px !important;
+  }
+  .forpad{
+    padding-left: 29px;
+  }
+   }
+
+  /* ################ End of Responsive width 768px ################*/
+
+  @media (min-width: 768.98px) and (max-width: 1024.98px) { 
+    .text{
+      font-size: 26px !important;
+      line-height: 20px !important;
+    padding-top: 30px !important;
+    }  
+    .big{
+      font-size: 34px !important; 
+      line-height: 40px !important;
+    }
+    .button{
+      border: 1px solid #000000;
+      border-radius: 2px;
+      padding: 15px 40px;
+      letter-spacing: 1.25%;
+      font-size: 15px !important;
+      font-weight: 500;
+      background-color:white;
+      line-height: 15.42px;
+    
+    color: black;
+    }
+    .button:hover{
+      border: 1px solid #FFFFFF;
+      background-color: #296071;
+      color: white;
+    }
+    .imagehero{
+      margin-top: 30px !important;
+    }
+    .newheroimage{
+      display: none;
+    }
+    .imgbottom{
+      display: none;
+    }
+    .welcome{
+      padding-top: 120px !important;
+     }
+     .welcometext{
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 26px;
+     }
+     .welcometext br{
+      display: none;
+     }
+     .row .image1{
+      padding:10px;
+    }
+    .text-overlay .innertext{
+      font-size: 20px !important;
+      padding-top: 15px !important;
+      height: 70px !important;
+    }
+    .texthoverp1{
+      font-size: 20px !important;
+    }
+  
+    .text-overlay2 p{
+      font-size: 20px !important;
+      padding-top: 20px !important;
+      height: 80px !important;
+    }
+    .text-overlay2 {
+      position: absolute;
+      top: 65% !important;
+      text-align: center;
+      width: 100%;
+  
+    }
+     .text-overlay2 p{
+      font-size: 24px  !important;
+     font-weight: 700;
+     color: #FFFFFF;
+     height: 10px;
+     background: rgba(71, 152, 166, 0.75)  !important;
+      padding: 20px;
+      align-items: center;
+      height: 85px; 
+    }
+    #btnview{
+      border: 1px solid #000000;
+      border-radius: 2px;
+      padding: 15px 40px;
+      letter-spacing: 1.25%;
+      font-size: 12px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color:white;
+      color: black;
+    }
+    #btnview:hover{
+      border: 1px solid #FFFFFF;
+     
+      background-color: #296071;
+      color: white;
+    }
+    .section3{
+      margin-top: 100px !important;
+    }
+    .textonpic{
+     padding: 0px !important;
+    }
+   
+    .floridaimage{
+      display: none !important;
+      
+    }
+    #section3{
+     
+      background-size:cover !important;
+      background-position:center;
+      width: 100%;
+    height: 330px !important;
+      overflow: hidden;
+    }
+    .bigtext{
+      display: block !important;
+      align-items: center !important;
+      flex-direction: column !important;
+      padding-top: 150px !important;
+      text-align: center;
+    }
+   .bigtext p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px !important;
+    line-height: 30px !important;
+    color: #FFFFFF;
+  }
+  .bigtext .headflorida{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px !important;
+    line-height: 160px !important;
+    padding-top: 14px !important;
+    /* identical to box height */
+    color: #FFFFFF;
+
+  }
+    .section4{
+      margin-top: 130px !important;
+   
+    }
+   .textbox br{
+    display: none !important;
+   }
+  .buttonasghar{
+    font-size: 16px !important;
+    padding: 15px 40px !important;
+   }
+ 
+  .section4border{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+  }
+  .doctorpic{
+    margin-left: -12px !important;
+  }
+ 
+  .textbox{
+    padding-top: 70px !important;
+  }
+  .textbox .head3{
+
+    font-size: 22px !important;
+
+  }
+  .textbox .head5{
+   
+    font-size: 24px !important;
+ 
+  }
+  .textbox .doctorpara{
+    font-size: 16px !important  ;
+    text-align: justify;
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
+  }
+  
+  #btnview{
+    font-size: 16px !important;
+    font-weight: 400;
+    
+  }
+.textflorida{
+  font-size: 120px !important;
+  margin-top: -112px !important;
+}
+   .ourofficeimage{
+    display: block;
+   }
+   .ourofficetext p{
+    text-align: center !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    margin-top: -34px !important;
+    
+   }
+   .ourofficetext br{
+    display: block;
+   }
+   .office{
+    margin-top: 30px !important;
+    padding:15px 40px !important;
+   }
+   .surgery{
+    background:url(../img/LEAVES.png) no-repeat !important;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 550px !important;
+   }
+   .right {
+    padding: 5px;
+   }
+  .textbox2 .breakline2{
+    font-size: 15px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+  }
+  .textbox2 .breakline2 br{
+    display: none !important;
+  }
+ 
+  .textbox2 .middle{
+    color: #296071;
+    font-size: 15px !important;
+  }
+  .textbox2 ul{
+    margin: 0;
+    padding-left:20px;
+    padding-bottom:10px !important;
+  }
+  .textbox2 ul li {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-align: justify;
+  }
+ 
+  .surgery .right .textbox2{
+    padding-top: 10% !important;
+  }
+  .textbox2 h3{
+    color: #296071;
+    font-size: 24px !important;
+    font-weight: 700;
+  }
+  
+  .textbox2 .middle{
+    color: #296071;
+    font-weight: 600;
+  }
+  .textbox2 .button2{
+    font-size:14px;
+    padding:15px 40px;
+  }
+  .forpad{
+    padding-left: 29px;
+  }
+   }
+
+  /* ################ End of Responsive width 1024px ################*/
+
+
+  /* ################ End of Responsive width 768px ################*/
+
+  @media (min-width: 1024.98px) and (max-width: 1440.98px) { 
+    .text{
+      font-size: 34px !important;
+      line-height: 20px !important;
+    padding-top: 60px !important;
+    }  
+    .big{
+      font-size: 46px !important; 
+      line-height: 66px !important;
+    }
+    .button{
+      border: 1px solid #000000;
+      border-radius: 2px;
+      padding: 15px 40px;
+      letter-spacing: 1.25%;
+      font-size: 16px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      
+      background-color:white;
+    color: black;
+    }
+    .button:hover{
+      border: 1px solid #FFFFFF;
+      background-color: #296071;
+      color: white;
+    }
+    .imagehero{
+      margin-top: 30px !important;
+    }
+    .newheroimage{
+      display: none;
+    }
+    .imgbottom{
+      display: none;
+    }
+    .welcome{
+      padding-top: 120px !important;
+     }
+     .welcometext{
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 26px;
+     }
+     .welcometext br{
+      display: none !important;
+     }
+     .row .image1{
+      padding:10px;
+    }
+    .text-overlay .innertext{
+      font-size: 24px !important;
+      padding-top: 24px !important;
+    }
+    .text-overlay2 p{
+      font-size: 24px !important;
+      padding-top: 20px !important;
+    }
+    .text-overlay2 {
+      position: absolute;
+      top: 70% !important;
+      text-align: center;
+      width: 100%;
+  
+    }
+    .text-overlay2 p{
+      font-size: 24px  !important;
+     font-weight: 700;
+     color: #FFFFFF;
+     height: 10px;
+     background: rgba(71, 152, 166, 0.75)  !important;
+      padding: 20px;
+      align-items: center;
+      height: 85px; 
+    }
+    
+    #btnview{
+      border: 1px solid #000000;
+      border-radius: 2px;
+      padding: 15px 45px !important;
+      letter-spacing: 1.25%;
+      font-size: 16px !important;
+      font-weight: 500;
+      line-height: 15.42px;
+      background-color:white;
+      color: black;
+    }
+    #btnview:hover{
+      border: 1px solid #FFFFFF;
+     
+      background-color: #296071;
+      color: white;
+    }
+    .section3{
+      margin-top: 100px !important;
+    }
+    .textonpic{
+     padding: 0px !important;
+    }
+   
+    .floridaimage{
+      display: none !important;
+    }
+    #section3{
+     
+      background-size:cover !important;
+      background-position:center;
+      width: 100%;
+    height: 500px !important;
+      overflow: hidden;
+    }
+    .bigtext{
+      display: block !important;
+      align-items: center !important;
+      flex-direction: column !important;
+      padding-top: 250px !important;
+      text-align: center;
+    }
+   .bigtext p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px !important;
+    line-height: 53px !important;
+    color: #FFFFFF;
+  }
+  .bigtext .headflorida{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 170px !important;
+    line-height: 160px !important;
+    padding-top: 44px !important;
+    /* identical to box height */
+    color: #FFFFFF;
+
+  }
+    .section4{
+      margin-top: 130px !important;
+   
+    }
+   .textbox br{
+    display: none;
+   }
+  .buttonasghar{
+    font-size: 16px !important;
+    padding: 15px 40px !important;
+   }
+ 
+  .section4border{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+  }
+  .doctorpic{
+    margin-left: -12px !important;
+  }
+ 
+  .textbox{
+    padding-top: 160px !important;
+  }
+  .textbox .head3{
+
+    font-size: 38px !important;
+
+  }
+  .textbox .head5{
+   
+    font-size: 34px !important;
+ 
+  }
+  .textbox .doctorpara{
+    font-size: 16px !important  ;
+    text-align: justify;
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
+  }
+  /* #btnview{
+    font-size: 16px !important;
+    font-weight: 400;
+    
+  } */
+.textflorida{
+  font-size: 170px !important;
+  margin-top: -160px !important;
+}
+   .ourofficeimage{
+    display: block;
+   }
+   .ourofficetext p{
+    text-align: center !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    margin-top: -50px !important;
+    
+   }
+   .ourofficetext br{
+    display: block;
+   }
+   .office{
+    margin-top: 30px !important;
+    padding: 15px 40px !important;
+   }
+   .surgery{
+    background:url(../img/LEAVES.png) no-repeat !important;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 750px !important;
+   }
+   .right {
+    padding: 5px;
+   }
+  .textbox2 .breakline2{
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+  }
+  .textbox2 .breakline2 br{
+    display: none !important;
+  }
+ 
+  .textbox2 .middle{
+    color: #296071;
+    font-size: 16px !important;
+  }
+  .textbox2 ul{
+    margin: 0;
+    padding-left:20px;
+    padding-bottom:40px !important;
+  }
+  .textbox2 ul li {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    text-align: justify;
+  }
+ 
+  .surgery .right .textbox2{
+    padding-top: 10% !important;
+  }
+  .textbox2 h3{
+    color: #296071;
+    font-size: 36px !important;
+    font-weight: 700;
+  }
+  
+  .textbox2 .middle{
+    color: #296071;
+    font-weight: 600;
+  }
+  .textbox2 .button2{
+    font-size:14px;
+    padding:15px 40px;
+  }
+   }
+
+  /* ################ End of Responsive width 1440px ################*/
+
+
+
+  /* ########### for Screen 2560px responsive  ########### */
+
+  @media (min-width: 1440.98px) and (max-width: 2560.98px) { 
+    .newheroimage{
+      display: none;
+    }
+    .imgbottom{
+      display: none;
+    }
+    
+  } 
+
+  /* ######## End of screen 2560px responsive ############## */
+
+  /* ########### for Screen 2560px responsive  ########### */
+
+  @media (min-width: 2560.98px) and (max-width: 10000.98px) { 
+    .newheroimage{
+      display: none;
+    }
+    .imgbottom{
+      display: none;
+    }
+    
+  } 
+
+  /* ######## End of screen 2560px responsive ############## */
+ 
+  #section2{
+    background: url(../img/Group\ 125.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+  }
+  .height{
+    line-height: 66px;
+  }
+  .welcome{
+   padding-top: 180px;
+  }
+ 
+  .row .pic{
+    width: 100%;
+    border-radius: 2px;
+    /* padding-bottom: 20px; */
+   
+    /* padding: 0px 20px 20px 0px; */
+  }
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    cursor:pointer;
+  }
+  .text-overlay{
+ position: absolute;
+    top: 68%;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .texthover {
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#FFFFFF;
+    padding: 10px;
+    height: 100%;
+     background-color: rgba(41, 96, 113, 0.75);
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .texthoverp1{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .text-overlay .innertext{
+    font-size: 24px;
+   font-weight: 700;
+   color: #FFFFFF;
+   height: 10px;
+    background-color: rgba(41, 96, 113, 0.75);
+    padding: 20px;
+    align-items: center;
+    height: 85px; 
+  }
+
+  .image-container:hover .texthover{
+   
+    opacity:1;
+  }
+  .image-container:hover .innertext{
+    opacity: 0 !important;
+  }
+   .rowimage{
+    padding-top:80px;
+   }
+
+  .textonpic{
+    display: none;
+  }
+  .text1{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 5px;
+    color: #78B2BD;
+    text-align: center;
+  }
+  .text2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #296071;
+  }
+  .section3{
+    margin-top: 147px;
+  }
+   #section3{
+    background: linear-gradient(0deg, rgba(41, 96, 113, 0.5), rgba(41, 96, 113, 0.5)),url(../img/image\ 2.png);
+    background-repeat:  no-repeat;
+    background-size:100% 100%;
+    background-position:center;
+    width: 100%;
+  height: 604px;
+    overflow: hidden;
+  }
+  .floridaimage{
+    display: none;
+  }
+
+  .bigtext{
+    align-items: center;
+    flex-direction: column;
+    padding-top: 310px;
+  }
+  .bigtext p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 66px;
+    color: #FFFFFF;
+  }
+  .bigtext .headflorida{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 225px;
+    line-height: 264px;
+    padding-top: 8px;
+    /* identical to box height */
+    color: #FFFFFF;
+  } 
+  .section4{
+    margin-top: 165px;
+  }
+  .section4border{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+  }
+  .doctorpic{
+    margin-left: -21px;
+  }
+  .buttonasghar{
+    border:none;
+    border-radius: 2px;
+    padding: 15px 45px;
+    letter-spacing: 1.25%;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 18.77px;
+    background-color: #296071;
+    color: #FFFFFF;
+  }
+  .buttonasghar:hover{
+    border: 1px solid #000000;
+    background-color:#FFFFFF;
+    color:#000000;
+  }
+  .textbox{
+    padding-top: 170px;
+  }
+  .textbox .head3{
+    color: #296071;
+    font-size: 42px;
+    font-weight: 700;
+  }
+  .textbox .head5{
+    color: #4798A6;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .textbox .doctorpara{
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .text-overlay2 {
+    position: absolute;
+    top: 68%;
+    text-align: center;
+    width: 100%;
+  }
+  .text-overlay2 p{
+    font-size: 24px;
+   font-weight: 700;
+   color: #FFFFFF;
+   height: 10px;
+   background: rgba(71, 152, 166, 0.75);
+    padding: 20px;
+    align-items: center;
+    height: 85px; 
+  }
+ #btnview{
+  padding: 15px 45px;
+ }
+  .textflorida{
+    margin-top: -205px;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 225px;
+     color: #FFFFFF;
+  }
+  .ourofficetext p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -50px;
+    
+  } 
+  .office{
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    padding: 15px 45px;
+    letter-spacing: 1.25%;
+    font-size: 15px;
+    font-weight: 500px;
+    line-height: 18.77px;
+    background-color: #296071;
+    color: #FFFFFF;
+  }
+  .office:hover{
+    border: 1px solid #000000;
+    background-color:#FFFFFF;
+    color:#000000;
+  }
+  .surgery{
+    background:url(../img/LEAVES.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 750px;
+  }
+  .surgery .right{
+    padding-left: 50%;
+   
+  }
+  .surgery .textbox2{
+    padding-top: 30%;
+  }
+  .textbox2 h3{
+    color: #296071;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .textbox2 .breakline2{
+    font-size: 14px;
+    text-align: justify;
+    padding-top: 5px;
+    font-weight: 500;
+    word-spacing: -1.5px;
+  }
+  .textbox2 .middle{
+    font-size: 15px;
+    color: #296071;
+    font-weight: 600;
+  }
+  .textbox2 ul{
+    margin: 0;
+    padding-left:20px;
+    padding-bottom:40px;
+  }
+  .textbox2 ul li {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .surgery .right .textbox .middle{
+    color: #4798A6;
+  }
+
+  .button2{
+    border: 1px solid #000000;
+    border-radius: 2px;
+    padding: 15px 45px;
+    letter-spacing: 1.25%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.77px;
+    background: none;
+  }
+  .button2:hover{
+    border: 1px solid #FFFFFF;
+    background-color: #296071;
+    color: white;
+  }
+  #footer{
+    background: url(../img/Group\ 125.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    /* padding: 20px 0px; */
+    margin-top: 147px;
+    padding: 50px 0px;
+  }
+  .footerfonticon{
+    color: #296071;
+    padding: 8px 0px;
+  }
+  .footerlogo{
+  height: 75px;
+  }
+
+  .bottomicons .nav-link {
+    padding-right: 10px;
+  }
+  .gallery {
+
+    display:flex;
+    flex-direction: column;
+   
+  }
+  #footer .hoverr{
+    color:#000000;
+  }
+  
+  #footer .hoverr:hover{
+      color:#51c4e4;
+      text-decoration: underline;
+  }
+  .gallery-cell {
+    width: auto;
+    height: auto;
+    
+  }
+  .flickity-button {
+    display: none;
+    }
